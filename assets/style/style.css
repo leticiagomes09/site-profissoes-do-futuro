@@ -1,0 +1,169 @@
+/* ======== ESTILO CLEAN E PROFISSIONAL ======== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  background-color: #fdfcf9;
+  border-bottom: 1px solid #e8e4da;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  color: #c49a6c; /* tom dourado suave */
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #c49a6c;
+  border-bottom: 2px solid #c49a6c;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, #fffaf4 0%, #ffffff 100%);
+  padding: 60px 8%;
+}
+
+.texto-banner {
+  max-width: 480px;
+}
+
+.texto-banner h2 {
+  font-size: 2rem;
+  color: #b57f50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.texto-banner p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.imagem-banner {
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.sobre {
+  text-align: center;
+  padding: 80px 10%;
+  background-color: #ffffff;
+}
+
+.sobre h3 {
+  font-size: 1.6rem;
+  color: #b57f50;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sobre h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #b57f50;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.sobre p {
+  max-width: 750px;
+  margin: 15px auto;
+  color: #444;
+  font-weight: 300;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #fdfcf9;
+  border-top: 1px solid #e8e4da;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer .redes {
+  margin-top: 5px;
+}
+
+footer a {
+  color: #b57f50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-banner {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .texto-banner {
+    max-width: 100%;
+  }
+}
