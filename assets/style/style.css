@@ -282,3 +282,123 @@ footer a:hover {
     max-width: 90%;
   }
 }
+
+/* ===== ENTREVISTA ===== */
+.entrevista {
+  padding: 80px 8%;
+  background-color: #fffaf4;
+  text-align: left;
+}
+
+.entrevista h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #b57f50;
+  margin-bottom: 25px;
+}
+
+.entrevista .introducao {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  color: #555;
+}
+
+.perguntas {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pergunta {
+  background-color: #fdfcf9;
+  border: 1px solid #eee7dc;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pergunta h4 {
+  color: #b57f50;
+  margin-bottom: 10px;
+}
+
+.pergunta p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== FORMULÁRIO ===== */
+.contato-form {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.contato-form h3 {
+  font-size: 1.5rem;
+  color: #b57f50;
+  margin-bottom: 10px;
+}
+
+.contato-form p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: 500;
+}
+
+input, textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #fdfcf9;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #b57f50;
+  box-shadow: 0 0 4px rgba(181, 127, 80, 0.3);
+}
+
+button {
+  background-color: #b57f50;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a56e40;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .pergunta {
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
